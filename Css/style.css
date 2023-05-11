@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+#logo{
+    width: 50px;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: flex-end;
+  }
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    padding: 8px;
+}
+
+footer{
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+}
+
+footer #mapaSitio{
+    display: flex;
+    flex-direction: column !important;
+}
+
+h2, h3{
+    margin: 10px;
+}
+
+p{
+    margin: 10px 10px 20px 10px;
+}
+
+#inicio{
+    position: relative;
+}
+
+#texto{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+}
+
+#texto h2, p{
+    opacity: 1;
+}
+
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#galeria img{
+    width: 500px;
+    height: 250px;
+    
+}
+
+#divFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#contactoFooter{
+    display: flex;
+    flex-direction: row;
+}
+
+#mapaSitio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#contactoH3{
+    height: 100%;
+    width: 25%;
+}
+
+#mapa{
+    height: 100%;
+    width: 37,5%;
+    margin: 10px;
+}
+
+#infoContacto{
+    height: 100%;
+    width: 37,5%;
+    margin: 10px;
+}
+
+#mapaSitio{
+    height: 100%;
+    width: 75%;
+}
+
+#boton{
+    /*height: 100%;
+    width: 25%;*/
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    font-size: xx-large;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#col1{
+    height: 100%;
+    margin: 10px;
+    flex-direction: column;
+}
+
+#col2{
+    height: 100%;
+    margin: 10px;
+}
+
+a:hover{
+    color: rgb(227, 0, 0);
+}
