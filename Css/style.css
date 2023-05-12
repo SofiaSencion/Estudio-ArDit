@@ -158,7 +158,7 @@ a:hover{
 
 #formulario{
     display: grid;
-    grid-template-rows: ;
+    grid-template-rows: 50% 50% ; /*hacer una sola fila*/
     grid-template-columns: 50% 50%;
 }
 
