@@ -158,12 +158,12 @@ a:hover{
 
 #formulario{
     display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: repeat(2, 1fr); 
-  grid-template-rows: 1fr; 
-  gap: 0px 10px; 
-  grid-template-areas: 
-    "col1 col2"; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: 1fr; 
+    gap: 0px 10px; 
+    grid-template-areas: 
+        "col1 col2"; 
 }
 
 #col1{
@@ -179,3 +179,4 @@ a:hover{
     margin: 10px;
     grid-area: col2;
 }
+
