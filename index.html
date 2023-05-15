@@ -54,9 +54,47 @@
     </header>
     <main>
         <div id="inicio">
-            <div id="galeriaInicio">
-                <img src="./imagenes/21.jpg" alt="Galeria de imagenes"> <!--galeria de imagenes-->
-            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./imagenes/21.jpg" class="d-block w-100" alt="Proyecto 21">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenes/7.jpg" class="d-block w-100" alt="Proyecto 7">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenes/8.jpg" class="d-block w-100" alt="Proyecto 8">
+                  </div> 
+                  <div class="carousel-item">
+                    <img src="./imagenes/12.jpg" class="d-block w-100" alt="Proyecto 12">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenes/15.jpg" class="d-block w-100" alt="Proyecto 15">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenes/18.jpg" class="d-block w-100" alt="Proyecto 18">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
             <div id="texto">
                 <h2>Estudio ArDit</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum id fuga excepturi ut voluptatum, reprehenderit laborum consequuntur ea deleniti explicabo tempora, numquam optio dolorem. At alias eius error velit molestiae non recusandae dolores excepturi! Exercitationem rerum, eius repellendus ut aspernatur voluptatem. Eligendi voluptatum harum ex explicabo nisi sunt debitis quasi.</p>

@@ -13,6 +13,15 @@ header{
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
+}
+
+main{
+    margin-top: 3rem;
+}
+
+h2, h3{
+    border-bottom: 1px  rgb(227, 0, 0); /* SUBRAYADO ROJO TITULOS ARREGLAR */
 }
 
 footer{
