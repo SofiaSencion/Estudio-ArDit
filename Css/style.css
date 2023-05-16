@@ -1,11 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+body {
+    height: 100%;
+}
+
+header {
     background-color: black;
     color: white;
     position: sticky;
@@ -13,18 +17,22 @@ header{
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 50;
+    height: 7.5%;
 }
 
-main{
-    margin-top: 3rem;
+main {
+    height: 100%;
+    min-width: 100%;
 }
 
-h2, h3{
-    border-bottom: 1px  rgb(227, 0, 0); /* SUBRAYADO ROJO TITULOS ARREGLAR */
+h2,
+h3 {
+    border-bottom: 1px rgb(227, 0, 0);
+    /* SUBRAYADO ROJO TITULOS ARREGLAR */
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
     padding: 10px;
@@ -32,14 +40,20 @@ footer{
     width: 100%;
     left: 0;
     bottom: 0;
+    z-index: 50;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: self-start;
 }
 
-#logo{
+#logo {
     width: 50px;
     height: auto;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
@@ -50,111 +64,142 @@ ul {
     padding: 0;
     overflow: hidden;
     justify-content: flex-end;
-  }
-  
+}
+
 li {
     float: left;
 }
-  
+
 li a {
     display: block;
     padding: 8px;
 }
 
-footer{
-   display: flex;
-   justify-content: space-between;
-   flex-direction: row;
-}
-
-h2, h3{
+h2,
+h3 {
     margin: 10px;
 }
 
-p{
+p {
     margin: 10px 10px 20px 10px;
 }
 
-#inicio{ /*Main Section del Index*/
-    position: relative;
-}
-
-#texto{ /*Parrafo estudio ardit index*/
+#texto {
+    /*Parrafo estudio ardit index*/
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    left: 16px;
+    bottom: 25%;
+    width: 50%;
+    padding: 10px;
     background-color: black;
     color: white;
     opacity: 0.8;
+    border-radius: 10px;
+    min-width: 400px;
+    max-height: 200px;
+    overflow: hidden;
 }
 
-#texto h2, p{ /*Parrafo estudio ardit index*/
+#texto p {
+    /*Parrafo estudio ardit index*/
     opacity: 1;
+    overflow-y: scroll;
+    box-sizing: content-box; 
 }
 
-#galeria{
+#galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#galeria img{
+#galeria img {
     width: 500px;
     height: 250px;
-    
+
 }
 
-#divFooter{
+#divFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1.3fr 1.4fr 0.7fr 0.6fr;
-    grid-template-rows: 1fr; 
-    gap: 0px 10px; 
-     grid-template-areas: 
-        "contactoFooter mapaInfo mapaSitio flecha"; 
+    width: 100%;
+    padding: 5px;
+    height: 100%;
 }
 
-#contactoFooter{ /*contacto footer*/
+#contactoFooter {
+    /*contacto footer*/
     display: flex;
-    grid-area: contactoFooter;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 60%;
+    padding: 5px;
 }
 
-#mapaInfo{
+#mapaInfo {
     grid-area: mapaInfo;
 }
 
-#mapaSitio{ /*mapa del sitio footer*/
+#mapaSitio {
+    /*mapa del sitio footer*/
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
-    width: 75%;
+    width: 40%;
     grid-area: mapaSitio;
+    text-align: right;
+    padding-right: 5%;
 }
 
-#contactoH3{ /*h2 contacto footer*/
+#mapaSitio ul {
+    /*mapa del sitio footer*/
+    align-self: flex-end;
+}
+
+#contactoH3 {
+    /*h2 contacto footer*/
+    width: fit-content;
+    margin: 0 5px;
+    padding: 0;
+    flex: 0 1 auto;
+}
+
+#mapa {
+    /*fake mapa footer*/
     height: 100%;
-    width: 25%;
+    flex: 0 1 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
 }
 
-#mapa{ /*fake mapa footer*/
+#mapa img {
+    /*fake mapa footer*/
     height: 100%;
-    width: 37,5%;
-    margin: 10px;
+    margin: 0 10px;
 }
 
-/*
-#infoContacto{ /*datos de contacto footer*
+#infoContacto {
     height: 100%;
-    width: 37,5%;
-    margin: 10px;
+    flex: 0 1 auto;
+    align-items: center;
 }
-*/
 
-#boton{ /*flecha arriba footer*/
+#infoContacto ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#infoContacto ul li {
+    margin-bottom: 10px;
+}
+
+#boton {
+    /*flecha arriba footer*/
     /*height: 100%;
     width: 25%;*/
     height: 50px;
@@ -166,32 +211,46 @@ p{
     grid-area: flecha;
 }
 
-form{
+form {
     display: flex;
     justify-content: space-between;
     /*flex-direction: row;*/
 }
 
-a:hover{
+a:hover {
     color: rgb(227, 0, 0);
 }
 
-#textarea{
+#textarea {
     margin: 0.3rem 0 1rem 0;
 }
 
-/*////////////////////////////////////////////////GRIDS NO TOCAR/////////////////////////////////*/
-#formulario{
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 0.6fr 1.4fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 10px; 
-    grid-template-areas: 
-      "col1 col2";
+.carousel {
+    min-width: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
 }
 
-#col1{
+.carousel > .carousel-inner > .carousel-item > img{
+    min-width: 100vh;
+    min-height: 100vh;
+    max-height: 100vh !important;
+    height: 100vh;
+    width: 100vh;
+}
+
+/*////////////////////////////////////////////////GRIDS NO TOCAR/////////////////////////////////*/
+#formulario {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.6fr 1.4fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-template-areas:
+        "col1 col2";
+}
+
+#col1 {
     height: 100%;
     margin: 1rem;
     display: flex;
@@ -200,7 +259,7 @@ a:hover{
     width: 80%;
 }
 
-#col2{
+#col2 {
     height: 100%;
     margin: 10px;
     grid-area: col2;
@@ -209,20 +268,37 @@ a:hover{
     width: 70%;
 }
 
-#mail{
+#mail {
     margin: 0.3rem 0 1rem 0;
 }
 
-#telefono{
+#telefono {
     margin: 0.3rem 0 1rem 0;
 }
 
-#nombre{
+#nombre {
     margin: 0.3rem 0 1rem 0;
 }
 
-#enviar{
+#enviar {
     margin: 0.3rem 0 1rem 0;
     width: fit-content;
     padding: 0.3rem;
 }
+
+@media (max-width: 768px){
+    body{
+     background-color: rgb(165, 235, 255);
+     flex-direction: column;
+     flex-wrap: wrap;
+    }
+ 
+    #col1, #col2{
+     flex: 100%;
+    }
+ 
+    footer{
+    
+     flex-direction: column;
+    }
+ }
