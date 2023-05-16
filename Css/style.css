@@ -30,7 +30,8 @@ footer{
     padding: 10px;
     position: fixed;
     width: 100%;
-    height: fit-content;
+    left: 0;
+    bottom: 0;
 }
 
 #logo{
@@ -66,11 +67,6 @@ footer{
    flex-direction: row;
 }
 
-footer #mapaSitio{
-    display: flex;
-    flex-direction: column !important;
-}
-
 h2, h3{
     margin: 10px;
 }
@@ -79,11 +75,11 @@ p{
     margin: 10px 10px 20px 10px;
 }
 
-#inicio{
+#inicio{ /*Main Section del Index*/
     position: relative;
 }
 
-#texto{
+#texto{ /*Parrafo estudio ardit index*/
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -92,7 +88,7 @@ p{
     opacity: 0.8;
 }
 
-#texto h2, p{
+#texto h2, p{ /*Parrafo estudio ardit index*/
     opacity: 1;
 }
 
@@ -112,55 +108,62 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1.3fr 1.4fr 0.7fr 0.6fr;
+    grid-template-rows: 1fr; 
+    gap: 0px 10px; 
+     grid-template-areas: 
+        "contactoFooter mapaInfo mapaSitio flecha"; 
 }
 
-#contactoFooter{
+#contactoFooter{ /*contacto footer*/
     display: flex;
-    flex-direction: row;
+    grid-area: contactoFooter;
 }
 
-#mapaSitio{
+#mapaInfo{
+    grid-area: mapaInfo;
+}
+
+#mapaSitio{ /*mapa del sitio footer*/
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
+    height: 100%;
+    width: 75%;
+    grid-area: mapaSitio;
 }
 
-#contactoH3{
+#contactoH3{ /*h2 contacto footer*/
     height: 100%;
     width: 25%;
 }
 
-#mapa{
+#mapa{ /*fake mapa footer*/
     height: 100%;
     width: 37,5%;
     margin: 10px;
 }
 
-#infoContacto{
+/*
+#infoContacto{ /*datos de contacto footer*
     height: 100%;
     width: 37,5%;
     margin: 10px;
 }
+*/
 
-#mapaSitio{
-    height: 100%;
-    width: 75%;
-}
-
-#boton{
+#boton{ /*flecha arriba footer*/
     /*height: 100%;
     width: 25%;*/
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-color: gray;
+    background-color: rgb(70, 70, 70);
     font-size: xx-large;
     text-align: center;
-}
-
-#col2{
-    display: flex;
-    flex-direction: column;
+    grid-area: flecha;
 }
 
 form{
