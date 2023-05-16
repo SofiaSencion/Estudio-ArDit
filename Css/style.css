@@ -177,7 +177,7 @@ a:hover{
 }
 
 #textarea{
-    margin: 10px;
+    margin: 0.3rem 0 1rem 0;
 }
 
 /*////////////////////////////////////////////////GRIDS NO TOCAR/////////////////////////////////*/
@@ -209,3 +209,20 @@ a:hover{
     width: 70%;
 }
 
+#mail{
+    margin: 0.3rem 0 1rem 0;
+}
+
+#telefono{
+    margin: 0.3rem 0 1rem 0;
+}
+
+#nombre{
+    margin: 0.3rem 0 1rem 0;
+}
+
+#enviar{
+    margin: 0.3rem 0 1rem 0;
+    width: fit-content;
+    padding: 0.3rem;
+}
