@@ -29,8 +29,7 @@ main {
 
 h2,
 h3 {
-    border-bottom: 1px rgb(227, 0, 0);
-    /* SUBRAYADO ROJO TITULOS ARREGLAR */
+    text-decoration: underline red 2px;
 }
 
 footer {
@@ -198,19 +197,6 @@ p {
 #infoContacto ul li {
     margin-bottom: 10px;
 }
-/*
-#boton {
-    /*flecha arriba footer*/
-    /*height: 100%;
-    width: 25%;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: rgb(70, 70, 70);
-    font-size: xx-large;
-    text-align: center;
-    grid-area: flecha;
-}*/
 
 form {
     display: flex;
@@ -304,4 +290,26 @@ a:hover:not(.titulo){
      display: block;
      width: 100%;
     }
+ }
+
+ .iconos{
+    color: white;
+    transition: 0.2;
+    margin: 0 0.5rem;
+ }
+
+ #facebook:hover{
+    color: rgb(0, 108, 202);
+ }
+
+ #instagram:hover{
+    color: rgb(174, 56, 238);
+ }
+
+ #youtube:hover{
+    color: rgb(225, 0, 0);
+ }
+
+ #whatsapp:hover{
+    color: rgb(0, 189, 25);
  }
