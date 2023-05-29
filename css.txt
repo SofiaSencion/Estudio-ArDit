@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 50;
+    height: 7.5%;
+}
+
+main {
+    height: 100%;
+    min-width: 100%;
+    margin-top: 3rem;
+}
+
+h2,
+h3 {
+    text-decoration: underline red 2px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 50;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: self-start;
+}
+
+#logo {
+    width: 50px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+}
+
+h2,
+h3 {
+    margin: 10px;
+}
+
+p {
+    margin: 10px 10px 20px 10px;
+}
+
+#texto {
+    /*Parrafo estudio ardit index*/
+    position: absolute;
+    left: 16px;
+    bottom: 25%;
+    width: 50%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    border-radius: 10px;
+    min-width: 400px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+#texto p {
+    /*Parrafo estudio ardit index*/
+    opacity: 1;
+    overflow-y: scroll;
+    box-sizing: content-box; 
+}
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#galeria img {
+    width: 30rem;
+    height: 15rem;
+
+}
+
+#divFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    height: 100%;
+}
+
+#contactoFooter {
+    /*contacto footer*/
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 60%;
+    padding: 5px;
+}
+
+#mapaInfo {
+    grid-area: mapaInfo;
+}
+
+#mapaSitio {
+    /*mapa del sitio footer*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 40%;
+    grid-area: mapaSitio;
+    text-align: right;
+    padding-right: 5%;
+}
+
+#mapaSitio ul {
+    /*mapa del sitio footer*/
+    align-self: flex-end;
+}
+
+#contactoH3 {
+    /*h2 contacto footer*/
+    width: fit-content;
+    margin: 0 5px;
+    padding: 0;
+    flex: 0 1 auto;
+}
+
+#mapa {
+    /*fake mapa footer*/
+    height: 100%;
+    flex: 0 1 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+#mapa img {
+    /*fake mapa footer*/
+    height: 100%;
+    margin: 0 10px;
+}
+
+#infoContacto {
+    height: 100%;
+    flex: 0 1 auto;
+    align-items: center;
+}
+
+#infoContacto ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#infoContacto ul li {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    /*flex-direction: row;*/
+}
+
+a:hover:not(.titulo){
+    text-decoration: underline red 2px;
+}
+
+#textarea {
+    margin: 0.3rem 0 1rem 0;
+}
+
+.carousel {
+    min-width: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.carousel > .carousel-inner > .carousel-item > img{
+    min-width: 100vh;
+    min-height: 100vh;
+    max-height: 100vh !important;
+    height: 100vh;
+    width: 100vh;
+}
+
+
+#formulario {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.6fr 1.4fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-template-areas:
+        "col1 col2";
+}
+
+#col1 {
+    height: 100%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    grid-area: col1;
+    width: 80%;
+}
+
+#col2 {
+    height: 100%;
+    margin: 10px;
+    grid-area: col2;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#mail {
+    margin: 0.3rem 0 1rem 0;
+}
+
+#telefono {
+    margin: 0.3rem 0 1rem 0;
+}
+
+#nombre {
+    margin: 0.3rem 0 1rem 0;
+}
+
+#enviar {
+    margin: 0.3rem 0 1rem 0;
+    width: fit-content;
+    padding: 0.3rem;
+}
+
+@media (max-width: 768px){
+    body{
+     flex-direction: column;
+     flex-wrap: wrap;
+     display: block;
+     width: 100%;
+    }
+ 
+    #col1, #col2{
+     flex: 100%;
+    }
+ 
+    footer{
+     flex-direction: column;
+     display: block;
+     width: 100%;
+    }
+ }
+
+ .iconos{
+    color: white;
+    transition: 0.2;
+    margin: 0 0.5rem;
+ }
+
+ #facebook:hover{
+    color: rgb(0, 108, 202);
+ }
+
+ #instagram:hover{
+    color: rgb(174, 56, 238);
+ }
+
+ #youtube:hover{
+    color: rgb(225, 0, 0) ;
+ }
+
+ #whatsapp:hover{
+    color: rgb(0, 189, 25);
+ }

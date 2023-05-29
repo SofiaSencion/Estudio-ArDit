@@ -1,0 +1,59 @@
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#formulario {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.6fr 1.4fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-template-areas:
+        "col1 col2";
+
+    form {
+        display: flex;
+        justify-content: space-between;
+      }
+
+    #col1 {
+        height: 100%;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        grid-area: col1;
+        width: 80%;
+
+        #mail {
+            margin: 0.3rem 0 1rem 0;
+        }
+        
+        #telefono {
+            margin: 0.3rem 0 1rem 0;
+        }
+        
+        #nombre {
+            margin: 0.3rem 0 1rem 0;
+        }
+    }
+
+    #col2 {
+        height: 100%;
+        margin: 10px;
+        grid-area: col2;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+
+        #textarea {
+            margin: 0.3rem 0 1rem 0;
+        }
+
+        #enviar {
+            margin: 0.3rem 0 1rem 0;
+            width: fit-content;
+            padding: 0.3rem;
+        }
+    }
+}
