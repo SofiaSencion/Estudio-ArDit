@@ -65,17 +65,6 @@ p {
     }
 }
 
-#galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    #galeria img {
-        width: 30rem;
-        height: 15rem;
-    }
-}
-
 a:hover:not(.titulo){
     text-decoration: underline $rojo 2px;
 } /*como escribir hover:not en scss??*/
