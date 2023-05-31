@@ -18,16 +18,26 @@ body {
     min-width: 100%;
     margin-top: 3rem; }
     body main .carousel {
-      min-width: 100vh;
-      min-height: 100vh;
-      max-height: 100vh; }
-      body main .carousel .carousel > .carousel-inner > .carousel-item > img {
-        min-width: 100vh;
-        min-height: 100vh;
-        max-height: 100vh !important;
+      height: 100vh; }
+      body main .carousel .carousel-item {
         height: 100vh;
-        width: 100vh; }
+        overflow-y: hidden; }
 
+/*
+.carousel {
+            min-width: 100vh;
+            min-height: 100vh;
+            max-height: 100vh;
+    
+            .carousel > .carousel-inner > .carousel-item > img{
+                min-width: 100vh;
+                min-height: 100vh;
+                max-height: 100vh !important;
+                height: 100vh;
+                width: 100vh;
+            }
+        }
+*/
 form {
   display: flex;
   justify-content: space-between; }
@@ -112,20 +122,22 @@ footer {
         flex-direction: row;
         align-items: center;
         align-content: center; }
-        footer #divFooter #contactoFooter #mapa #mapa img {
+        footer #divFooter #contactoFooter #mapa img {
           /*fake mapa footer*/
           height: 100%;
           margin: 0 10px; }
         footer #divFooter #contactoFooter #mapa #mapaInfo {
           grid-area: mapaInfo; }
         footer #divFooter #contactoFooter #mapa #infoContacto {
+          display: flex;
+          flex-direction: column;
           height: 100%;
-          flex: 0 1 auto;
+          margin-left: 10px;
           align-items: center; }
-          footer #divFooter #contactoFooter #mapa #infoContacto #infoContacto ul {
+          footer #divFooter #contactoFooter #mapa #infoContacto ul {
             display: flex;
             flex-direction: column; }
-            footer #divFooter #contactoFooter #mapa #infoContacto #infoContacto ul #infoContacto ul li {
+            footer #divFooter #contactoFooter #mapa #infoContacto ul li {
               margin-bottom: 10px; }
           footer #divFooter #contactoFooter #mapa #infoContacto .iconos {
             color: white;
@@ -149,9 +161,27 @@ footer {
         grid-area: mapaSitio;
         text-align: right;
         padding-right: 5%; }
-        footer #divFooter #contactoFooter #mapaSitio #mapaSitio ul {
+        footer #divFooter #contactoFooter #mapaSitio ul {
           /*mapa del sitio footer*/
           align-self: flex-end; }
+
+#galeria {
+  /*galeria imagenes proyectos y servicios*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 10px;
+  grid-template-areas: "img1 img2 img3"; }
+  #galeria .imagen {
+    width: 30rem;
+    height: 15rem; }
+  #galeria #img1 {
+    grid-area: img1;
+    z-index: 500; }
 
 * {
   margin: 0;
@@ -197,33 +227,31 @@ p {
   min-width: 400px;
   max-height: 200px;
   overflow: hidden; }
-  #texto #texto p {
+  #texto p {
     /*Parrafo estudio ardit index*/
     opacity: 1;
     overflow-y: scroll;
     box-sizing: content-box; }
 
-#galeria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  #galeria #galeria img {
-    width: 30rem;
-    height: 15rem; }
-
 a:hover:not(.titulo) {
   text-decoration: underline #e10000 2px; }
 
 /*como escribir hover:not en scss??*/
-@media (max-width: 768px) {
-  body {
-    flex-direction: column;
-    flex-wrap: wrap;
-    display: block;
-    width: 100%; }
-  #col1, #col2 {
-    flex: 100%; }
-  footer {
-    flex-direction: column;
-    display: block;
-    width: 100%; } }
+/* @media (max-width: 768px){
+    body{
+     flex-direction: column;
+     flex-wrap: wrap;
+     display: block;
+     width: 100%;
+    }
+ 
+    #col1, #col2{
+     flex: 100%;
+    }
+ 
+    footer{
+     flex-direction: column;
+     display: block;
+     width: 100%;
+    }
+ } */

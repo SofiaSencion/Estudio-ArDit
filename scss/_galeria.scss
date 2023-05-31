@@ -3,8 +3,22 @@
     flex-wrap: wrap;
     justify-content: space-around;
 
-    #galeria img {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: 1fr; 
+    gap: 0px 10px; 
+    grid-template-areas: 
+      "img1 img2 img3";
+
+    .imagen {
         width: 30rem;
         height: 15rem;
     }
+
+    #img1{
+        grid-area: img1;
+        z-index: 500;
+    }
+
 }

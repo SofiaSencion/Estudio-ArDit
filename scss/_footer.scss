@@ -47,7 +47,7 @@ footer {
                 align-items: center;
                 align-content: center;
 
-                #mapa img {
+                img {
                     /*fake mapa footer*/
                     height: 100%;
                     margin: 0 10px;
@@ -58,15 +58,17 @@ footer {
                 }
 
                 #infoContacto {
+                    display: flex;
+                    flex-direction: column;
                     height: 100%;
-                    flex: 0 1 auto;
+                    margin-left: 10px;
                     align-items: center;
 
-                    #infoContacto ul {
+                    ul {
                         display: flex;
                         flex-direction: column;
 
-                        #infoContacto ul li {
+                        li {
                             margin-bottom: 10px;
                         }
                     }
@@ -114,7 +116,7 @@ footer {
                 text-align: right;
                 padding-right: 5%;
 
-                #mapaSitio ul {
+                ul {
                     /*mapa del sitio footer*/
                     align-self: flex-end;
                 }

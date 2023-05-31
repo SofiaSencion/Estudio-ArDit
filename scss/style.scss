@@ -2,6 +2,7 @@
 @import "body";
 @import "contacto";
 @import "footer";
+@import "galeria";
 
 * {
     margin: 0;
@@ -57,7 +58,7 @@ p {
     max-height: 200px;
     overflow: hidden;
 
-    #texto p {
+    p {
         /*Parrafo estudio ardit index*/
         opacity: 1;
         overflow-y: scroll;
@@ -69,7 +70,7 @@ a:hover:not(.titulo){
     text-decoration: underline $rojo 2px;
 } /*como escribir hover:not en scss??*/
 
-@media (max-width: 768px){
+/* @media (max-width: 768px){
     body{
      flex-direction: column;
      flex-wrap: wrap;
@@ -86,4 +87,4 @@ a:hover:not(.titulo){
      display: block;
      width: 100%;
     }
- }
+ } */
