@@ -167,21 +167,61 @@ footer {
 
 #galeria {
   /*galeria imagenes proyectos y servicios*/
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  /*  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;*/
   display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  gap: 0px 10px;
-  grid-template-areas: "img1 img2 img3"; }
-  #galeria .imagen {
+  /*grid-auto-columns: 1fr; */
+  grid-template-columns: repeat(3, minmax(1fr, 400px));
+  grid-template-rows: repeat(7, 1fr);
+  gap: 1rem 1rem;
+  grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9" "img10 img11 img12" "img13 img14 img15" "img16 img17 img18" "img19 img20 img21"; }
+  #galeria .galeria__img {
+    width: 30rem;
+    height: 15rem;
+    /*object-fit: cover;*/
+    /*display: block;*/ }
+  #galeria .galeria__item {
     width: 30rem;
     height: 15rem; }
   #galeria #img1 {
-    grid-area: img1;
-    z-index: 500; }
+    grid-area: img1; }
+  #galeria #img2 {
+    grid-area: img2; }
+  #galeria #img3 {
+    grid-area: img3; }
+  #galeria #img4 {
+    grid-area: img4; }
+  #galeria #img5 {
+    grid-area: img5; }
+  #galeria #img6 {
+    grid-area: img6; }
+  #galeria #img7 {
+    grid-area: img7; }
+  #galeria #img8 {
+    grid-area: img8; }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+#dibujo {
+  margin: 2rem;
+  height: 40vh; }
+
+#error {
+  color: #c40000;
+  font-weight: bold; }
+
+.ups {
+  margin: 1rem 1rem 0 1rem;
+  font-size: 1.4rem;
+  font-weight: bold; }
+
+#volver {
+  margin: 1rem; }
 
 * {
   margin: 0;
@@ -191,7 +231,7 @@ footer {
 
 h2,
 h3 {
-  text-decoration: underline #e10000 2px;
+  text-decoration: underline #c40000 2px;
   margin: 10px; }
 
 a {
@@ -234,7 +274,7 @@ p {
     box-sizing: content-box; }
 
 a:hover:not(.titulo) {
-  text-decoration: underline #e10000 2px; }
+  text-decoration: underline #c40000 2px; }
 
 /*como escribir hover:not en scss??*/
 /* @media (max-width: 768px){
