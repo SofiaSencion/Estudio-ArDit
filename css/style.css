@@ -83,12 +83,12 @@ footer {
   background-color: black;
   color: white;
   padding: 10px;
-  position: fixed;
+  /*position: fixed;*/
   width: 100%;
   left: 0;
   bottom: 0;
   z-index: 50;
-  height: 20%;
+  height: auto;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -169,12 +169,14 @@ footer {
   /*galeria imagenes proyectos y servicios*/
   /*  display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;*/
-  height: 100%;
-  width: 100%;
-  display: grid;
+    justify-content: space-around;
+
+    height: 100%;
+    width: 100%;*/
   /*grid-auto-columns: 1fr; */
-  grid-template-columns: repeat(3, minmax(1fr, 400px));
+  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(7, 1fr);
   gap: 1rem 1rem;
   grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9" "img10 img11 img12" "img13 img14 img15" "img16 img17 img18" "img19 img20 img21"; }
@@ -202,6 +204,26 @@ footer {
     grid-area: img7; }
   #galeria #img8 {
     grid-area: img8; }
+  #galeria #img9 {
+    grid-area: img9; }
+  #galeria #img10 {
+    grid-area: img10; }
+  #galeria #img11 {
+    grid-area: img11; }
+  #galeria #img12 {
+    grid-area: img12; }
+  #galeria #img13 {
+    grid-area: img13; }
+  #galeria #img14 {
+    grid-area: img14; }
+  #galeria #img15 {
+    grid-area: img15; }
+  #galeria #img16 {
+    grid-area: img16; }
+  #galeria #img17 {
+    grid-area: img17; }
+  #galeria #img18 {
+    grid-area: img18; }
 
 #main404 {
   display: flex;
@@ -278,21 +300,52 @@ p {
 a:hover:not(.titulo) {
   text-decoration: underline #c40000 2px; }
 
-/* @media (max-width: 768px){
-    body{
-     flex-direction: column;
-     flex-wrap: wrap;
-     display: block;
-     width: 100%;
-    }
- 
-    #col1, #col2{
-     flex: 100%;
-    }
- 
-    footer{
-     flex-direction: column;
-     display: block;
-     width: 100%;
-    }
- } */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    display: block;
+    width: 100%;
+    position: static; }
+  footer #divFooter #contactoFooter #mapa img {
+    display: none; }
+  footer #divFooter {
+    flex-direction: column; }
+  footer #divFooter #contactoFooter {
+    flex-direction: column; }
+  #galeria {
+    /*galeria imagenes proyectos y servicios*/
+    /*  display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;*/
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-template-areas: "img1" "img2" "img3" "img4"  "img5"  "img6" "img7"  "img8"  "img9" "img10"  "img11"  "img12" "img13"  "img14"  "img15" "img16"  "img17"  "img18" "img19"  "img20"  "img21"; }
+  #formulario {
+    display: grid;
+    width: 100%;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-template-areas: "col1"  "col2"; }
+  #formulario #col1 {
+    height: 100%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    grid-area: col1;
+    width: 70%; }
+  #formulario #col2 {
+    height: 100%;
+    margin: 10px;
+    grid-area: col2;
+    display: flex;
+    flex-direction: column;
+    width: 70%; }
+  textarea {
+    width: 100%;
+    overflow: auto; } }
