@@ -26,7 +26,7 @@
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header bg-dark text-light">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Estudio ArDit</h5>
+                        <a class="navbar-brand titulo" href="../index.html"><h5 class="offcanvas-title" id="offcanvasNavbarLabel">Estudio ArDit</h5></a>
                         <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body bg-dark">
@@ -57,74 +57,77 @@
         </nav>
     </header>
 
-    <!--MAIN-->
-    <main> <!--Contacto-->
-        <h2>Contacto</h2>
-        <div id="formulario">
-            <form action=""><!--mandar a mail ArDit--></form>
-                <div id="col1"><!--nombre-->
-                    <label for="nombre">Nombre*</label>
-                    <input type="text" id="nombre" placeholder="Su nombre">
+    <div id="page-container">
+    <div id="content-wrap">
+            <!--MAIN-->
+            <main> <!--Contacto-->
+                <h2>Contacto</h2>
+                <div id="formulario">
+                    <form action=""><!--mandar a mail ArDit--></form>
+                        <div id="col1"><!--nombre-->
+                            <label for="nombre">Nombre*</label>
+                            <input type="text" id="nombre" placeholder="Su nombre">
 
-                    <!--telefono-->
-                    <label for="telefono">Teléfono*</label>
-                    <input type="text" id="telefono" placeholder="Su teléfono">
+                            <!--telefono-->
+                            <label for="telefono">Teléfono*</label>
+                            <input type="text" id="telefono" placeholder="Su teléfono">
 
-                    <!--mail-->
-                    <label for="mail">Mail*</label>
-                    <input type="text" id="mail" placeholder="Su mail">
-                </div>   
-                
-                <div id="col2">
+                            <!--mail-->
+                            <label for="mail">Mail*</label>
+                            <input type="text" id="mail" placeholder="Su mail">
+                        </div>   
+                        
+                        <div id="col2">
 
-                    <!--mensaje textarea-->
-                    <label for="mensaje">Mensaje</label>
-                    <div id="textarea">
-                        <textarea name="mensaje" id="mensaje" cols="50" rows="10" placeholder="Su mensaje"></textarea>
-                    </div>
-                    <!--boton enviar-->
-                    <input type="submit" id="enviar">
+                            <!--mensaje textarea-->
+                            <label for="mensaje">Mensaje</label>
+                            <div id="textarea">
+                                <textarea name="mensaje" id="mensaje" cols="50" rows="10" placeholder="Su mensaje"></textarea>
+                            </div>
+                            <!--boton enviar-->
+                            <input type="submit" id="enviar">
+                        </div>
+                    </form>
                 </div>
-            </form>
-        </div>
-    </main>
- 
-    <footer>
-        <div id="divFooter">
-            <div id="contactoFooter">
-                <div id="contactoH3">
-                    <h3>Contacto</h3>
-                </div>
-                <div id="mapa">
-                    <img src="../imagenes/fakeMapa.png" alt="Google maps de la direccion del estudio">
-                    <!--Mapa Google Maps-->
-                    <div id="infoContacto">
-                        <ul>
-                            <li><strong>Dirección</strong> Av. Italia</li>
-                            <li><strong>Teléfono</strong> 1234 5678</li>
-                            <li><strong>Mail</strong> Mail@Gmail .com</li>
-                        </ul>
-                        <div id="socialMedia">
-                            <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook" id="facebook" class="iconos"></ion-icon></a>
-                            <a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube" id="youtube" class="iconos"></ion-icon></a>
-                            <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram" id="instagram" class="iconos"></ion-icon></a>
-                            <a href="https://web.whatsapp.com/" target="_blank"><ion-icon name="logo-whatsapp" id="whatsapp" class="iconos"></ion-icon></a>
+            </main>
+    </div>
+            <footer>
+                <div id="divFooter">
+                    <div id="contactoFooter">
+                        <div id="contactoH3">
+                            <h3>Contacto</h3>
+                        </div>
+                        <div id="mapa">
+                            <img src="../imagenes/fakeMapa.png" alt="Google maps de la dirección del estudio">
+                            <!--Mapa Google Maps-->
+                            <div id="infoContacto">
+                                <ul>
+                                    <li><strong>Dirección</strong> Av. Italia</li>
+                                    <li><strong>Teléfono</strong> 1234 5678</li>
+                                    <li><strong>Mail</strong> Mail@Gmail .com</li>
+                                </ul>
+                                <div id="socialMedia">
+                                    <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook" id="facebook" class="iconos"></ion-icon></a>
+                                    <a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube" id="youtube" class="iconos"></ion-icon></a>
+                                    <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram" id="instagram" class="iconos"></ion-icon></a>
+                                    <a href="https://web.whatsapp.com/" target="_blank"><ion-icon name="logo-whatsapp" id="whatsapp" class="iconos"></ion-icon></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div id="mapaSitio">
+                        <h3>Mapa del sitio</h3>
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="./estudio.html">Estudio</a></li>
+                            <li><a href="./proyectos.html">Proyectos</a></li>
+                            <li><a href="./servicios.html">Servicios</a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div id="mapaSitio">
-                <h3>Mapa del sitio</h3>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./estudio.html">Estudio</a></li>
-                    <li><a href="./proyectos.html">Proyectos</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+            </footer>
+    </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script><!--Ionicons-->
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> <!--Ionicons-->

@@ -17,27 +17,7 @@ body {
     height: 100%;
     min-width: 100%;
     margin-top: 3rem; }
-    body main .carousel {
-      height: 100vh; }
-      body main .carousel .carousel-item {
-        height: 100vh;
-        overflow-y: hidden; }
 
-/*
-.carousel {
-            min-width: 100vh;
-            min-height: 100vh;
-            max-height: 100vh;
-    
-            .carousel > .carousel-inner > .carousel-item > img{
-                min-width: 100vh;
-                min-height: 100vh;
-                max-height: 100vh !important;
-                height: 100vh;
-                width: 100vh;
-            }
-        }
-*/
 form {
   display: flex;
   justify-content: space-between; }
@@ -73,11 +53,23 @@ form {
     flex-direction: column;
     width: 70%; }
     #formulario #col2 #textarea {
-      margin: 0.3rem 0 1rem 0; }
+      margin: 0.3rem 0 1rem 0;
+      height: fit-content; }
     #formulario #col2 #enviar {
       margin: 0.3rem 0 1rem 0;
       width: fit-content;
       padding: 0.3rem; }
+
+#page-container {
+  position: relative;
+  min-height: 100vh; }
+  #page-container #content-wrap {
+    padding-bottom: 20rem;
+    /* Footer height 9rem*/ }
+  #page-container footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
 
 footer {
   background-color: black;
@@ -124,7 +116,7 @@ footer {
         align-content: center; }
         footer #divFooter #contactoFooter #mapa img {
           /*fake mapa footer*/
-          height: 100%;
+          height: 7rem;
           margin: 0 10px; }
         footer #divFooter #contactoFooter #mapa #mapaInfo {
           grid-area: mapaInfo; }
@@ -167,14 +159,6 @@ footer {
 
 #galeria {
   /*galeria imagenes proyectos y servicios*/
-  /*  display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    height: 100%;
-    width: 100%;*/
-  /*grid-auto-columns: 1fr; */
-  background-color: blueviolet;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(7, 1fr);
@@ -225,6 +209,10 @@ footer {
   #galeria #img18 {
     grid-area: img18; }
 
+html header {
+  max-width: 100%;
+  overflow-x: hidden; }
+
 #main404 {
   display: flex;
   justify-content: center;
@@ -247,14 +235,28 @@ footer {
 #volver {
   margin: 1rem; }
 
+#videoIndex {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; }
+
+.textoArdit {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  padding: 20px; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif; }
 
-h2,
-h3 {
+h1, h2, h3 {
   text-decoration: underline #c40000 2px;
   margin: 10px; }
 
@@ -277,30 +279,13 @@ ul {
 p {
   margin: 10px 10px 20px 10px; }
 
-#texto {
-  /*Parrafo estudio ardit index*/
-  position: absolute;
-  left: 16px;
-  bottom: 25%;
-  width: 50%;
-  padding: 10px;
-  background-color: black;
-  color: white;
-  opacity: 0.8;
-  border-radius: 10px;
-  min-width: 400px;
-  max-height: 200px;
-  overflow: hidden; }
-  #texto p {
-    /*Parrafo estudio ardit index*/
-    opacity: 1;
-    overflow-y: scroll;
-    box-sizing: content-box; }
-
 a:hover:not(.titulo) {
   text-decoration: underline #c40000 2px; }
 
 @media (max-width: 768px) {
+  /*este media querie aplica siempre que el viewport sea MENOR a 768px*/
+  #inicio {
+    height: 100vh; }
   footer {
     flex-direction: column;
     display: block;
@@ -314,10 +299,7 @@ a:hover:not(.titulo) {
     flex-direction: column; }
   #galeria {
     /*galeria imagenes proyectos y servicios*/
-    /*  display: flex;
-           flex-wrap: wrap;
-           justify-content: space-around;*/
-    width: 100%;
+    width: 65%;
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
@@ -333,19 +315,22 @@ a:hover:not(.titulo) {
     gap: 10px;
     grid-template-areas: "col1"  "col2"; }
   #formulario #col1 {
-    height: 100%;
-    margin: 1rem;
+    height: 50%;
+    margin: 1rem 1rem 0 1rem;
     display: flex;
     flex-direction: column;
     grid-area: col1;
     width: 70%; }
   #formulario #col2 {
-    height: 100%;
-    margin: 10px;
+    height: 50%;
+    margin: 0 1rem 1rem 1rem;
     grid-area: col2;
     display: flex;
     flex-direction: column;
     width: 70%; }
   textarea {
     width: 100%;
-    overflow: auto; } }
+    overflow: auto;
+    height: auto; }
+  #textarea {
+    height: auto; } }

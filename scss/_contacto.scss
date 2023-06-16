@@ -1,3 +1,6 @@
+
+// contacto vista PC//////////////////
+
 form {
     display: flex;
     justify-content: space-between;
@@ -48,6 +51,7 @@ form {
 
         #textarea {
             margin: 0.3rem 0 1rem 0;
+            height: fit-content;
         }
 
         #enviar {
@@ -56,4 +60,19 @@ form {
             padding: 0.3rem;
         }
     }
+}
+
+#page-container{
+    position: relative;
+  min-height: 100vh;
+
+  #content-wrap {
+    padding-bottom: 20rem;    /* Footer height 9rem*/
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }
