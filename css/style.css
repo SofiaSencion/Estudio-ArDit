@@ -273,7 +273,8 @@ ul {
       padding: 8px; }
 
 p {
-  margin: 10px 10px 20px 10px; }
+  margin: 10px 10px 20px 10px;
+  line-height: 1.6rem; }
 
 a:hover:not(.titulo) {
   text-decoration: underline #c40000 2px; }
@@ -281,6 +282,9 @@ a:hover:not(.titulo) {
 .retrato {
   height: 40vh;
   margin: 1rem; }
+
+#estudio {
+  width: 98%; }
 
 @media (max-width: 768px) {
   /*este media querie aplica siempre que el viewport sea MENOR a 768px*/
