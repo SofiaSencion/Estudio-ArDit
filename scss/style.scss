@@ -48,6 +48,11 @@ a:hover:not(.titulo){
     text-decoration: underline $rojo 2px;
 } 
 
+.retrato{
+  height: 40vh;
+  margin: 1rem;
+}
+
 @media (max-width: 768px){ /*este media querie aplica siempre que el viewport sea MENOR a 768px*/
  
   #inicio{

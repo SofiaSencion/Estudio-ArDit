@@ -77,29 +77,6 @@ footer {
                         color: $blanco;
                         transition: 0.2;
                         margin: 0 0.5rem;
-
-                        #facebook{
-                            &:hover{
-                            color: $colorFb}
-                        }
-                        
-                        #instagram{ 
-                            &:hover{
-                            color: $colorIg;
-                        }
-                        }
-                        
-                        #youtube{ 
-                            &:hover{
-                            color: $colorYt;
-                        }
-                        }
-                        
-                        #whatsapp{ 
-                            &:hover{
-                            color: $colorWa;
-                        }
-                        }
                     }
                 }
             }
